@@ -1,12 +1,32 @@
-<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-<script>
-  window.OneSignalDeferred = window.OneSignalDeferred || [];
-  OneSignalDeferred.push(async function(OneSignal) {
-    await OneSignal.init({
-      appId: "00f6ee77-b203-48af-81f6-4910aa64f5b6",
-      safari_web_id: "web.onesignal.auto.571cab93-0309-4674-850d-02fe7b657956",
-      serviceWorkerParam: { scope: "/lup/" },
-      serviceWorkerPath: "lup/OneSignalSDKWorker.js",
-    });
-  });
-</script>
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>lup</title>
+    <link rel="icon" href="/lup/favicon.ico" />
+    <style id="expo-reset">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      body { overflow: hidden; }
+      #root { display: flex; height: 100%; flex: 1; }
+    </style>
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(async function(OneSignal) {
+        await OneSignal.init({
+          appId: "00f6ee77-b203-48af-81f6-4910aa64f5b6",
+          safari_web_id: "web.onesignal.auto.571cab93-0309-4674-850d-02fe7b657956",
+          serviceWorkerParam: { scope: "/lup/" },
+          serviceWorkerPath: "lup/OneSignalSDKWorker.js",
+        });
+      });
+    </script>
+  <link rel="icon" href="/lup/favicon.ico"/></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  <script src="/lup/_expo/static/js/web/index-7af4c10a9a5bfa960149efda9f86b618.js" defer></script>
+</body>
+</html>
