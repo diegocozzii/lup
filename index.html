@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>lup</title>
     <link rel="icon" type="image/png" href="/lup/icon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/lup/icon.png" />
@@ -15,15 +15,16 @@
     <meta name="apple-mobile-web-app-title" content="lup" />
     <meta name="mobile-web-app-capable" content="yes" />
     <style id="expo-reset">
-  html, body, #root {
-    min-height: 100%;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-  }
-</style>
+      html, body, #root {
+        height: 100dvh;
+        min-height: 100dvh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        overscroll-behavior: none;
+      }
+    </style>
     <script
       src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
       defer
@@ -41,7 +42,7 @@
       });
     </script>
   
-  </head>
+  <link rel="icon" href="/lup/favicon.ico"/></head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
@@ -49,5 +50,6 @@
       src="/lup/_expo/static/js/web/index-d73f93881c13e56f4ca44af8c9b6da41.js"
       defer
     ></script>
-  </body>
+  <script src="/lup/_expo/static/js/web/index-97b47c6748ba98dee707e6953562a297.js" defer></script>
+</body>
 </html>
